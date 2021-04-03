@@ -1,3 +1,9 @@
+---
+description: ""
+title: OAuth Token
+weight: 1
+---
+
 # OAuth Tokens
 
 Oauth tokens can be used internally to connect to other services which require authentication.

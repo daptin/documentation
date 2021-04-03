@@ -1,3 +1,9 @@
+---
+description: ""
+title: Data storage format
+weight: 1
+---
+
 # Data storage
 
 Daptin relies on a relational database for all data persistence requirements. As covered in the installation currently the following relational database are supported:

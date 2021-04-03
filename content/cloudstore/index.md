@@ -1,3 +1,9 @@
+---
+description: ""
+title: Cloud store
+weight: 1
+---
+
 # Cloud store
 
 Cloud store is an abstraction for storage API for various features of daptin like file column storage and site hosting.

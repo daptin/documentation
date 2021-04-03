@@ -1,3 +1,9 @@
+---
+description: ""
+title: Asset column
+weight: 1
+---
+
 Asset columns
 ===
 

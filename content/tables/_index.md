@@ -1,3 +1,9 @@
+---
+description: ""
+title: Tables
+weight: 1
+---
+
 # Tables
 
 !!! note

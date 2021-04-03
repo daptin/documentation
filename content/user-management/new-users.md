@@ -1,3 +1,9 @@
+---
+description: ""
+title: New user - Sign up API
+weight: 1
+---
+
 ## Sign Up Action
 
 Sign up is an [action](/actions/actions) on user entity. Sign up takes four inputs:

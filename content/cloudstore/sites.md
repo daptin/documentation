@@ -1,3 +1,9 @@
+---
+description: ""
+title: Static and Hugo Site
+weight: 1
+---
+
 Sites
 ==
 

@@ -1,3 +1,9 @@
+---
+description: ""
+title: Table data view API
+weight: 1
+---
+
 # Streams
 
 Streams are complimentary to [actions](/actions/actions). Think of streams as views in SQL. A stream is basically one entity + set of transformations and filters on the entity. Streams are read-only and exposed with similar semantics of that of entities. Daptin will expose JSONAPI for each stream just like it does for entities.

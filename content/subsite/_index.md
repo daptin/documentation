@@ -1,3 +1,9 @@
+---
+description: ""
+title: Static/Hugo Site
+weight: 1
+---
+
 # Sub site
 
 You can host multiple sites using daptin. A sub site is exposing a cloud storage folder statically under a sub-domain, domain or a path. 

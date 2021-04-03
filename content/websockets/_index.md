@@ -1,3 +1,9 @@
+---
+description: ""
+title: Websocket endpoint
+weight: 1
+---
+
 ## Websockets
 
 Clients can connect to a websocket endpoint

@@ -1,3 +1,8 @@
+---
+description: ""
+title: User management - Permission model
+weight: 1
+---
 
 
 # Guests
@@ -109,7 +114,7 @@ For these changes to take effect a restart is necessary.
 
 ### Instance level permission
 
-Like we saw in the [entity documentation](/setting-up/entities), every table has a ```permission``` column. No restart is necessary for changes in these permission.
+Like we saw in the [entity documentation](/getting-started/entities), every table has a ```permission``` column. No restart is necessary for changes in these permission.
 
 
 You can choose to disable new user registration by changing the `signup` action permissions.

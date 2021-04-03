@@ -1,3 +1,9 @@
+---
+description: ""
+title: Cloud store
+weight: 1
+---
+
 # Cloud store
 
 Datin can work with the following storage services:

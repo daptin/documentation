@@ -1,3 +1,9 @@
+---
+description: ""
+title: OAuth Connect
+weight: 1
+---
+
 # OAuth Connections
 
 Daptin is natively aware of oauth2 flows and can seamlessly handle oauth tokens and refresh tokens (if provided).

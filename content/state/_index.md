@@ -1,3 +1,9 @@
+---
+description: ""
+title: Column as state tracker
+weight: 1
+---
+
 # State tracking
 
 State of an object can help you tracing any sort of progress while making sure you maintain the consistence of the state. For eg, you might want to track the status of a "blog post" in terms of "draft"/"edited"/"published" which pre-defined endpoints defining the flow of states.
