@@ -2,23 +2,22 @@
 alwaysopen: true
 date: "2020-08-20T16:42:11.812Z"
 description: Getting started
-head: <hr/>
 hide:
 - toc
 post: "&nbsp;\U0001F44B"
 title: Getting started
-weight: 2
+weight: 1
 ---
 
 # Table of contents
 
-Baserow is an open-source online database tool. Users can use this no-code platform to create a database without any technical experience. It lowers the barriers to app creation so that anyone who can work with a spreadsheet can also create a database. The interface looks a lot like a spreadsheet. Our goal is to provide a perfect and fast user experience while keeping it easy for developers to write plugins and maintain the codebase. The developer documentation contains several topics you might need as a developer.
+Daptin is an open-source online database tool. Users can use this no-code platform to create a database without any technical experience. It lowers the barriers to app creation so that anyone who can work with a spreadsheet can also create a database. The interface looks a lot like a spreadsheet. Our goal is to provide a perfect and fast user experience while keeping it easy for developers to write plugins and maintain the codebase. The developer documentation contains several topics you might need as a developer.
 
 ## Getting started
 
-New to Baserow? This is the place to start.
+New to Daptin? This is the place to start.
 
-    Introduction: An introduction to some important concepts before using Baserow.
+    Introduction: An introduction to some important concepts before using Daptin.
     API: An introduction to the REST API and information about API resources.
     WebSocket API: An introduction to the WebSockets API which is used to broad cast real time updates.
     Database plugin An introduction to the database plugin which is installed by default.
@@ -28,15 +27,15 @@ New to Baserow? This is the place to start.
 Need some help with setting things up?
 
     Local demo: Run a local demo on your computer using docker-compose.
-    Install on Ubuntu: A step by step guide on how to install Baserow on an Ubuntu server.
-    Install on Cloudron: Instructions on how to manually install Baserow on Cloudron.
+    Install on Ubuntu: A step by step guide on how to install Daptin on an Ubuntu server.
+    Install on Cloudron: Instructions on how to manually install Daptin on Cloudron.
 
 ## Development
 
-Everything related to contributing and developing for Baserow.
+Everything related to contributing and developing for Daptin.
 
     Development environment: Setting up your local development environment using docker-compose.
-    Directory structure: The structure of all the directories in the Baserow repository explained.
+    Directory structure: The structure of all the directories in the Daptin repository explained.
     Tools: The tools (flake8, pytest, eslint, etc) and how to use them.
     Code quality: More information about the the code style, quality, choices we made, and how we enforce them.
 
@@ -44,7 +43,7 @@ Everything related to contributing and developing for Baserow.
 
 Everything related to custom plugin development.
 
-    Plugin basics: An introduction into Baserow plugins.
+    Plugin basics: An introduction into Daptin plugins.
     Plugin boilerplate: Don’t reinvent the wheel, use the boilerplate for quick plugin development.
     Create application: Want to create an application type? Learn how to do that here.
     Create database table view: Display table data like a calendar, Kanban board or however you like by creating a view type.

@@ -1,7 +1,7 @@
 ---
 description: ""
 title: Daptin
-weight: 1
+weight: 4
 ---
 
 Daptin provides API to programmatically create, edit, access and delete 
