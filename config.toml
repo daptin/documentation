@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "http://daptin.github.com/documentation"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
@@ -24,7 +24,7 @@ enableMissingTranslationPlaceholders = false
 # weight = 2
 # languageName = "Français"
 
-
+canonifyurls = true
 
 disableKinds = ["taxonomy", "taxonomyTerm", "category", "RSS"]
 

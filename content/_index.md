@@ -63,9 +63,9 @@ Daptin provides API to programmatically create, edit, access and delete
 
 Consume the following features easily on any device
 
-- [Database backed](getting-started/installation/#database-configuration) persistence, 3NF normalized tables
+- [Database backed](introduction/installation/#database-configuration) persistence, 3NF normalized tables
 - [JSON API](apis/overview/)/[GraphQL](features/enable-graphql/) for CRUD apis
-- [User](getting-started/access/) and [group management](getting-started/access/) and access control
+- [User](introduction/access/) and [group management](introduction/access/) and access control
 - Social login with [OAuth](extend/oauth_connection/): tested with google, github, linkedin
 - [Actions](actions/overview/) for abstracting out business flows
 - Extensive [state tracking APIs](state/machines/)
@@ -77,7 +77,7 @@ Consume the following features easily on any device
 - [Multiple websites](subsite/subsite/) under separate sub-domain/sub-paths
 - [Connect with external APIs](integrations/overview/) by using extension points
 - [Data View Streams](streams/streams/)
-- Flexible [data import](getting-started/data_import/) (auto create new tables and automated schema generation)
+- Flexible [data import](introduction/data_import/) (auto create new tables and automated schema generation)
     - XLSX 
     - JSON
     - CSV
