@@ -1,0 +1,200 @@
+<!doctype html><html><head><title>Websocket endpoint :: Daptin</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2021-04-04T15:29:33 UTC"><meta name=description content><title>Websocket endpoint :: Daptin</title><link rel="shortcut icon" href=https://daptin.github.io/documentation/images/favicon.png type=image/x-icon><link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css integrity=sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css><script src=https://code.jquery.com/jquery-3.5.1.min.js></script><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel=stylesheet><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/layout.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/css/style.main.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/css/style.menu.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/notice.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/tabs.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/panel.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/columns.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/children.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/attachments.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/sass/shortcodes/alert.css><link rel=stylesheet type=text/css href=https://daptin.github.io/documentation/css/docport.css><script src=https://daptin.github.io/documentation/js/docport.js></script><script type=text/javascript>var baseurl="https://daptin.github.io/documentation/"</script><link rel=stylesheet href=https://daptin.github.io/documentation/css/custom.css></head><body data-url=https://daptin.github.io/documentation/feature-manuals/websockets/><style type=text/css>#debug{display:-webkit-box;display:-ms-flexbox;display:flex;line-height:3.5rem;margin-bottom:.35rem;padding:0 2rem;position:fixed;left:0;right:0;top:0;top:0;min-height:150px;background-color:#fff;border:3px solid red;z-index:10000;word-wrap:all;overflow:auto}</style><header><div><div class=burger><a href=javascript:void(0); style=font-size:15px onclick="$('article > aside').toggleClass('responsive')">&#9776;</a></div><div><a class=baselink href=https://daptin.github.io/documentation/>Daptin</a></div><nav class=shortcuts><li role><a href=https://github.com/vjeantet/hugo-theme-docport rel=noopener>Github</a></li><li role><a href=https://github.com/vjeantet/hugo-theme-docport/archive/master.zip rel=noopener>Download</a></li><li role><a href=https://gohugo.io/ rel=noopener>Hugo Documentation</a></li><li role><a href=https://daptin.github.io/documentation/docport-theme/credits/ rel=noopener>Credits</a></li></nav></div></header><article><aside><div class=search><div class=searchbox><input data-search-input id=search-by type=text placeholder="Type to search..."></div><script type=text/javascript src=https://daptin.github.io/documentation/vendor/lunr/lunr.min.js></script><script type=text/javascript src=https://daptin.github.io/documentation/vendor/auto-complete/auto-complete.js></script><link href=https://daptin.github.io/documentation/vendor/auto-complete/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https://daptin.github.io/documentation/"</script><script type=text/javascript src=https://daptin.github.io/documentation/js/search.js></script></div><div id=close_menu><a href=javascript:void(0); style=font-size:15px onclick="$('article > aside').toggleClass('responsive')"><i class="fa fa-lg fa-times"></i></a></div><ul class=menu><li data-nav-id=https://daptin.github.io/documentation/overview/ class="dd-item haschildren
+item_level_$level"><i class="fas fa-chevron-right ddexp"></i>
+<a href=https://daptin.github.io/documentation/overview/>Overview</a><ul><li data-nav-id=https://daptin.github.io/documentation/overview/installation/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/overview/installation/>Installation</a></li><li data-nav-id=https://daptin.github.io/documentation/overview/configuration/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/overview/configuration/>Configuration</a></li></ul></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/ class="dd-item parent haschildren
+item_level_$level"><i class="fas fa-chevron-down ddexp"></i>
+<a href=https://daptin.github.io/documentation/feature-manuals/>Feature guide</a><ul><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/tables/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/tables/>Data model</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/actions/ class="dd-item haschildren
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/actions/>Actions</a>
+<i class="fas fa-chevron-right ddexp"></i><ul><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/actions/action-examples/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/actions/action-examples/>Page(/feature-manuals/actions/action-examples/_index.md)</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/actions/action-outcomes/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/actions/action-outcomes/>Page(/feature-manuals/actions/action-outcomes/_index.md)</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/actions/default-actions/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/actions/default-actions/>Page(/feature-manuals/actions/default-actions/_index.md)</a></li></ul></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/apis/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/apis/>API Reference</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/cloudstore/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/cloudstore/>Cloud store</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/extend/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/extend/>OAuth Connect</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/groups/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/groups/>User group</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/user-management/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/user-management/>User management - Permission model</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/users/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/users/>Users</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/overview/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/overview/>Daptin</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/subsite/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/subsite/>Static/Hugo Site</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/integrations/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/integrations/>OpenAPI Integration</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/streams/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/streams/>Table data view API</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/state/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/state/>Column as state tracker</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/reference/ class="dd-item
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/reference/>Data storage format</a></li><li data-nav-id=https://daptin.github.io/documentation/feature-manuals/websockets/ class="dd-item parent active
+item_level_$level"><a href=https://daptin.github.io/documentation/feature-manuals/websockets/>Websocket endpoint</a></li></ul></li></ul><center><a class=github-button href=https://github.com/vjeantet/hugo-theme-docport/archive/master.zip data-icon=octicon-cloud-download aria-label="Download vjeantet/hugo-theme-docport on GitHub">Download</a>
+<a class=github-button href=https://github.com/vjeantet/hugo-theme-docport data-icon=octicon-star data-show-count=false aria-label="Star vjeantet/hugo-theme-docport on GitHub">Star</a>
+<a class=github-button href=https://github.com/vjeantet/hugo-theme-docport/fork data-icon=octicon-repo-forked data-show-count=true aria-label="Fork vjeantet/hugo-theme-docport on GitHub">Fork</a></center>
+<script async defer src=https://buttons.github.io/buttons.js></script></aside><section class=page><nav id=ariane aria-label=breadcrumb><ol class=ariane><li><a class=text-link href=https://daptin.github.io/documentation/>Home</a></li><li><a class=text-link href=https://daptin.github.io/documentation/feature-manuals/>Feature guide</a></li><li class=active>Websocket endpoint</li></ol></nav><h1>Websocket endpoint</h1><div class=jump-to-section><span onclick="$h=$(this),$h.next('nav').slideToggle(100,function(){$h.children('i').attr('class',function(){return $h.next('nav').is(':visible')?'fas fa-chevron-down':'fas fa-chevron-right'})})"><span class="fas fa-align-right"></span>Jump to Section
+<i class="fas fa-chevron-right"></i></span><nav id=TableOfContents><ul><li><a href=#websockets>Websockets</a><ul><li><a href=#websocket-requests>Websocket requests</a></li></ul></li></ul></nav></div><div class=content><h2 ref=websockets>Websockets</h2><a class=anchor id=websockets></a><p>Clients can connect to a websocket endpoint</p><p>Endpoint</p><p><code>ws://localhost:6336/live?token=&lt;auth_token></code></p><p>!note WSS
+Use wss:// if you have enabled SSL</p><p>Client request payload structure</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+  <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>one</span> <span style=color:#960050;background-color:#1e0010>of</span> <span style=color:#960050;background-color:#1e0010>list-topic,</span> <span style=color:#960050;background-color:#1e0010>create-topic,</span> <span style=color:#960050;background-color:#1e0010>destroy-topic,</span> <span style=color:#960050;background-color:#1e0010>subscribe,</span> <span style=color:#960050;background-color:#1e0010>unsubscribe,</span> <span style=color:#960050;background-color:#1e0010>new-message</span>
+  <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+  <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>required</span> <span style=color:#960050;background-color:#1e0010>when</span> <span style=color:#960050;background-color:#1e0010>method</span> <span style=color:#960050;background-color:#1e0010>is</span> <span style=color:#960050;background-color:#1e0010>subscribe</span>
+  <span style=color:#f92672>&#34;payload&#34;</span>: {}
+  <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>attributes</span> <span style=color:#960050;background-color:#1e0010>depending</span> <span style=color:#960050;background-color:#1e0010>on</span> <span style=color:#960050;background-color:#1e0010>the</span> <span style=color:#960050;background-color:#1e0010>method</span>
+}
+</code></pre></div><h3 ref=websocket-requests>Websocket requests</h3><a class=anchor id=websocket-requests></a><h4 ref=list-topics>List topics</h4><a class=anchor id=list-topics></a><p>List all the available topics - System topics - User created topics</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;list-topic&#34;</span>
+}
+</code></pre></div><p>Sample Response</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;MessageSource&#34;</span>: <span style=color:#e6db74>&#34;system&#34;</span>,
+  <span style=color:#f92672>&#34;EventType&#34;</span>: <span style=color:#e6db74>&#34;response&#34;</span>,
+  <span style=color:#f92672>&#34;ObjectType&#34;</span>: <span style=color:#e6db74>&#34;topic-list&#34;</span>,
+  <span style=color:#f92672>&#34;EventData&#34;</span>: {
+    <span style=color:#f92672>&#34;topics&#34;</span>: [
+      <span style=color:#e6db74>&#34;task_task_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;timeline&#34;</span>,
+      <span style=color:#e6db74>&#34;application&#34;</span>,
+      <span style=color:#e6db74>&#34;json_schema_json_schema_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;plan_plan_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_account&#34;</span>,
+      <span style=color:#e6db74>&#34;stream&#34;</span>,
+      <span style=color:#e6db74>&#34;user_otp_account&#34;</span>,
+      <span style=color:#e6db74>&#34;outbox_outbox_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;oauth_token_oauth_token_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;stream_stream_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;deployment_deployment_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;feed_feed_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;smd_smd_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;site_site_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;timeline_timeline_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;tab_eygurbe&#34;</span>,
+      <span style=color:#e6db74>&#34;screen_screen_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_server&#34;</span>,
+      <span style=color:#e6db74>&#34;certificate&#34;</span>,
+      <span style=color:#e6db74>&#34;data_exchange&#34;</span>,
+      <span style=color:#e6db74>&#34;document_document_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;oauth_token&#34;</span>,
+      <span style=color:#e6db74>&#34;calendar_calendar_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;tab_nuqymzy&#34;</span>,
+      <span style=color:#e6db74>&#34;outbox&#34;</span>,
+      <span style=color:#e6db74>&#34;screen&#34;</span>,
+      <span style=color:#e6db74>&#34;integration_integration_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;oauth_connect&#34;</span>,
+      <span style=color:#e6db74>&#34;user_payment_user_payment_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail&#34;</span>,
+      <span style=color:#e6db74>&#34;world&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_account_mail_account_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_box&#34;</span>,
+      <span style=color:#e6db74>&#34;world_world_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;user_account_user_account_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;tab_nuqymzy_tab_nuqymzy_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;calendar&#34;</span>,
+      <span style=color:#e6db74>&#34;smd&#34;</span>,
+      <span style=color:#e6db74>&#34;user_payment&#34;</span>,
+      <span style=color:#e6db74>&#34;action&#34;</span>,
+      <span style=color:#e6db74>&#34;task&#34;</span>,
+      <span style=color:#e6db74>&#34;site&#34;</span>,
+      <span style=color:#e6db74>&#34;integration&#34;</span>,
+      <span style=color:#e6db74>&#34;starter_app_starter_app_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;plan&#34;</span>,
+      <span style=color:#e6db74>&#34;usergroup&#34;</span>,
+      <span style=color:#e6db74>&#34;tab_eygurbe_tab_eygurbe_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;deployment&#34;</span>,
+      <span style=color:#e6db74>&#34;starter_app&#34;</span>,
+      <span style=color:#e6db74>&#34;json_schema&#34;</span>,
+      <span style=color:#e6db74>&#34;user_otp_account_user_otp_account_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;feed&#34;</span>,
+      <span style=color:#e6db74>&#34;cloud_store_cloud_store_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;world_world_id_has_smd_smd_id&#34;</span>,
+      <span style=color:#e6db74>&#34;certificate_certificate_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_mail_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;action_action_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;data_exchange_data_exchange_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;user_account&#34;</span>,
+      <span style=color:#e6db74>&#34;application_application_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;document&#34;</span>,
+      <span style=color:#e6db74>&#34;oauth_connect_oauth_connect_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;cloud_store&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_server_mail_server_id_has_usergroup_usergroup_id&#34;</span>,
+      <span style=color:#e6db74>&#34;mail_box_mail_box_id_has_usergroup_usergroup_id&#34;</span>
+    ]
+  }
+}    
+</code></pre></div><h4 ref=create-topic>Create topic</h4><a class=anchor id=create-topic></a><p>Create a new topic</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;create-topic&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;&lt;new_topic_name&gt;&#34;</span>
+  }
+}
+</code></pre></div><h4 ref=destroy-topic>Destroy topic</h4><a class=anchor id=destroy-topic></a><p>Delete a user created topic</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;destroy-topic&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;&lt;topic_name&gt;&#34;</span>
+  }
+}
+</code></pre></div><h4 ref=subscribe-topic>Subscribe topic</h4><a class=anchor id=subscribe-topic></a><p>Listen to create/update/delete events in any table</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;subscribe&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;topic&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>
+  }
+}
+</code></pre></div><p>Create event sample payload</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;MessageSource&#34;</span>: <span style=color:#e6db74>&#34;database&#34;</span>,
+  <span style=color:#f92672>&#34;EventType&#34;</span>: <span style=color:#e6db74>&#34;create&#34;</span>,
+  <span style=color:#f92672>&#34;ObjectType&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>,
+  <span style=color:#f92672>&#34;EventData&#34;</span>: {
+    <span style=color:#f92672>&#34;__type&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>,
+    <span style=color:#f92672>&#34;confirmed&#34;</span>: <span style=color:#66d9ef>false</span>,
+    <span style=color:#f92672>&#34;created_at&#34;</span>: <span style=color:#e6db74>&#34;2021-03-13T13:47:07.954634Z&#34;</span>,
+    <span style=color:#f92672>&#34;email&#34;</span>: <span style=color:#e6db74>&#34;asdf@asfd.cm&#34;</span>,
+    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;asdf&#34;</span>,
+    <span style=color:#f92672>&#34;password&#34;</span>: <span style=color:#e6db74>&#34;$2a$11$HbH5o1s6ThsMJ9ft/.uljO9.T.od/tR0RFtep50Ef5mzymI6kNlW.&#34;</span>,
+    <span style=color:#f92672>&#34;permission&#34;</span>: <span style=color:#ae81ff>2097057</span>,
+    <span style=color:#f92672>&#34;reference_id&#34;</span>: <span style=color:#e6db74>&#34;004cc6b6-8b9b-4d51-936a-128133b21d04&#34;</span>,
+    <span style=color:#f92672>&#34;updated_at&#34;</span>: <span style=color:#66d9ef>null</span>,
+    <span style=color:#f92672>&#34;user_account_id&#34;</span>: <span style=color:#e6db74>&#34;ee655e01-98a5-4761-bc93-b7a15e2b5847&#34;</span>,
+    <span style=color:#f92672>&#34;version&#34;</span>: <span style=color:#ae81ff>1</span>
+  }
+}    
+</code></pre></div><p>Update event sample payload</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;MessageSource&#34;</span>: <span style=color:#e6db74>&#34;database&#34;</span>,
+  <span style=color:#f92672>&#34;EventType&#34;</span>: <span style=color:#e6db74>&#34;update&#34;</span>,
+  <span style=color:#f92672>&#34;ObjectType&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>,
+  <span style=color:#f92672>&#34;EventData&#34;</span>: {
+    <span style=color:#f92672>&#34;__type&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>,
+    <span style=color:#f92672>&#34;confirmed&#34;</span>: <span style=color:#66d9ef>false</span>,
+    <span style=color:#f92672>&#34;created_at&#34;</span>: <span style=color:#e6db74>&#34;2021-03-13T13:47:07.954634Z&#34;</span>,
+    <span style=color:#f92672>&#34;email&#34;</span>: <span style=color:#e6db74>&#34;asdf@asfd.cm&#34;</span>,
+    <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;asdf&#34;</span>,
+    <span style=color:#f92672>&#34;password&#34;</span>: <span style=color:#e6db74>&#34;$2a$11$U83vQU5A3Xq2Gcphb52XOej8H9p1GbFKerpkoSesbx674qZfBjJdu&#34;</span>,
+    <span style=color:#f92672>&#34;permission&#34;</span>: <span style=color:#ae81ff>2097057</span>,
+    <span style=color:#f92672>&#34;reference_id&#34;</span>: <span style=color:#e6db74>&#34;004cc6b6-8b9b-4d51-936a-128133b21d04&#34;</span>,
+    <span style=color:#f92672>&#34;updated_at&#34;</span>: <span style=color:#e6db74>&#34;2021-03-13T13:48:21.258962Z&#34;</span>,
+    <span style=color:#f92672>&#34;user_account_id&#34;</span>: <span style=color:#e6db74>&#34;ee655e01-98a5-4761-bc93-b7a15e2b5847&#34;</span>,
+    <span style=color:#f92672>&#34;version&#34;</span>: <span style=color:#ae81ff>2</span>
+  }
+}    
+</code></pre></div><h4 ref=subscribe-with-filters>Subscribe with filters</h4><a class=anchor id=subscribe-with-filters></a><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;subscribe&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;topic&#34;</span>: <span style=color:#e6db74>&#34;user_account&#34;</span>,
+    <span style=color:#f92672>&#34;filters&#34;</span>: {
+      <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>filter</span> <span style=color:#960050;background-color:#1e0010>on</span> <span style=color:#960050;background-color:#1e0010>type</span> <span style=color:#960050;background-color:#1e0010>of</span> <span style=color:#960050;background-color:#1e0010>event:</span> <span style=color:#960050;background-color:#1e0010>create/update/delete</span>
+      <span style=color:#f92672>&#34;EventType&#34;</span>: <span style=color:#e6db74>&#34;update&#34;</span>,
+      <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>filter</span> <span style=color:#960050;background-color:#1e0010>on</span> <span style=color:#960050;background-color:#1e0010>column</span> <span style=color:#960050;background-color:#1e0010>data,</span> <span style=color:#960050;background-color:#1e0010>rows</span> <span style=color:#960050;background-color:#1e0010>with</span> <span style=color:#960050;background-color:#1e0010>unmatched</span> <span style=color:#960050;background-color:#1e0010>column</span> <span style=color:#960050;background-color:#1e0010>value</span> <span style=color:#960050;background-color:#1e0010>will</span> <span style=color:#960050;background-color:#1e0010>not</span> <span style=color:#960050;background-color:#1e0010>be</span> <span style=color:#960050;background-color:#1e0010>sent</span>
+      <span style=color:#f92672>&#34;&lt;column_name&gt;&#34;</span>: <span style=color:#e6db74>&#34;&lt;filter_value&gt;&#34;</span>
+    }
+  }
+}    
+</code></pre></div><h4 ref=unsubscribe-topic>Unsubscribe topic</h4><a class=anchor id=unsubscribe-topic></a><p>Unsubscribe to an subscribed topic (this is required if you want to subscribe with new filters)</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;unsubscribe&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;topic&#34;</span>: <span style=color:#e6db74>&#34;&lt;topic_name&gt;&#34;</span>
+  }
+}
+</code></pre></div><h4 ref=new-message-for-a-user-created-topic>New message for a user-created topic</h4><a class=anchor id=new-message-for-a-user-created-topic></a><p>Send a message on a user created topic, broad-casted to all subscribers of this topic</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;new-message&#34;</span>,
+  <span style=color:#f92672>&#34;attributes&#34;</span>: {
+    <span style=color:#f92672>&#34;topic&#34;</span>: <span style=color:#e6db74>&#34;test&#34;</span>,
+    <span style=color:#f92672>&#34;message&#34;</span>: {
+      <span style=color:#f92672>&#34;hello&#34;</span>: <span style=color:#e6db74>&#34;world&#34;</span>
+    }
+  }
+}	
+</code></pre></div></div><div class=chevrons><a class=next href=https://daptin.github.io/documentation/feature-manuals/tables/ title="Data model" style=margin-right:0><div><p>Next page</p><label>Data model</label></div><i class="fas fa-arrow-right" style=font-size:1.7em></i></a></div></section><section class=right-menu><div class=TableOfContents><label><i class="fas fa-align-right"></i>&nbsp;&nbsp;What's on this page</label><nav><ul><li><a href=https://daptin.github.io/documentation/feature-manuals/websockets/>Websocket endpoint</a></li></ul></nav><nav id=TableOfContents><ul><li><a href=#websockets>Websockets</a><ul><li><a href=#websocket-requests>Websocket requests</a></li></ul></li></ul></nav></div><div class=Actions><nav><ul><li><a href=https://daptin.github.io/documentation/admin/#/collections/pages/entries/feature-manuals/websockets/_index target=blank><i class="fab fa-github"></i>
+Improve this page</a></li></ul></nav></div></section></article><footer><style type=text/css>.footer-gray{width:100%;color:#888}.footer-custom{font:12px/1.4 sans-serif;box-sizing:border-box;margin:0 auto;padding:24px}.footer-custom:after{display:table;clear:both;content:""}.footer-lists:after{display:table;clear:both;content:""}.ftr-hdr{color:#fff;font:22px/1.4 sans-serif;margin:1em 0 0}@media only screen and (min-width:768px){.ftr-hdr{font-size:18px}}.footer-list-wrap{width:50%;float:left;box-sizing:border-box}@media only screen and (min-width:568px){.footer-list-wrap{width:33.3333%}}@media only screen and (min-width:768px){.footer-list-wrap{width:25%}}.ftr-links-sub{padding:0;margin:0}.ftr-links-sub:after{display:table;clear:both;content:""}.ftr-links-sub li{display:block;list-style-type:none;margin:0;padding:3px 0;color:#888;font:12px sans-serif;text-transform:uppercase}.footer-custom a,.footer-custom a:link,.footer-custom a:visited,.ftr-links-sub li .link{text-decoration:none;color:#888;padding:5px 0;display:block}.footer-custom .footer-legal a{display:inline}.footer-custom a:hover,.footer-custom a:active,.ftr-links-sub li .link:hover{text-decoration:underline;color:#888;cursor:pointer}@media only screen and (min-width:768px){.footer-custom a,.footer-custom a:link,.footer-custom a:visited,.ftr-links-sub li .link{padding:0}}.footer-email{text-align:center}#ftrEmailForm{height:44px}#ftrEmailForm .error{display:none;color:red;text-align:left}#ftrEmailForm #ftrEmailInput{background:repeat #fff;border:1px solid #d6d6d6;box-sizing:border-box;color:#888;float:left;font:14px/1.4 sans-serif;padding:5px;width:70%;height:100%}#ftrEmailForm #ftrEmailInput:hover{border:1px solid #888}#ftrEmailForm #ftrEmailInput:focus{border:1px solid #ef9223;outline:#ef9223 auto 5px}#ftrEmailForm .button{width:30%;height:100%;padding:5px;float:left;border:1px solid #dfdfdf;box-sizing:border-box;color:#000;font:700 18px/1 sans-serif;text-align:center;text-transform:uppercase;background:#fff;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,white),color-stop(100%,#e1e1e1));background:-webkit-linear-gradient(top,white 0,#e1e1e1 100%);background:-moz-linear-gradient(top,white 0,#e1e1e1 100%);background:-ms-linear-gradient(top,white 0,#e1e1e1 100%);background:-o-linear-gradient(top,white 0,#e1e1e1 100%);background:linear-gradient(to bottom,white 0,#e1e1e1 100%);cursor:pointer;vertical-align:middle;outline:none}#ftrEmailForm .button:hover,#ftrEmailForm .button:active{background:#000;color:#fff;outline:none}.footer-social{text-align:center}.footer-social ul{padding:0;display:inline-block;list-style-type:none}.footer-social ul:after{display:table;clear:both;content:""}.footer-social li{float:left;margin:0 15px 0 0;padding:0}@media only screen and (min-width:768px){.footer-lists{width:100%}.footer-email{width:50%;float:left;text-align:left}.footer-social{width:45%;margin-left:5%;float:left;text-align:left}}@media only screen and (min-width:1008px){.footer-lists{width:66.6666%;float:left}.footer-email{width:33.3333%}.footer-social{width:33.3333%;float:right;margin-left:0}}.footer-legal{padding:15px 0 0;clear:left}.footer-payment{text-align:center}@media only screen and (min-width:768px){.footer-legal{width:66.6666%;float:left}.footer-payment{width:33.3333%;float:left}}@media only screen and (min-width:1008px){.footer-payment{text-align:left}}.footer-payment ul{padding:0;display:inline-block;list-style-type:none}.footer-payment ul li{display:inline-block;margin:0 6px}@media only screen and (min-width:1008px){.footer-payment ul li.ftr-stella{margin-left:0}}</style><div class=footer-gray><div class=footer-custom><div class=footer-lists><div class=footer-list-wrap><h6 class=ftr-hdr>Order Something</h6><ul class=ftr-links-sub><li>800-123-4567</li></ul><h6 class=ftr-hdr>International</h6><ul class=ftr-links-sub><li><a href=# rel=nofollow>France</a></li><li><a href=# rel=nofollow>Cape Verde</a></li></ul></div><div class=footer-list-wrap><h6 class=ftr-hdr>Customer Service</h6><ul class=ftr-links-sub><li><a href=# rel=nofollow>Contact Us</a></li><li><a href=# rel=nofollow>Ordering</a></li><li><a href=# rel=nofollow>Shipping & Delivery</a></li><li><a href=# rel=nofollow>Returns</a></li><li><a href=# rel=nofollow>Gift Cards</a></li><li><a href=# rel=nofollow>FAQs</a></li></ul></div><div class=footer-list-wrap><h6 class=ftr-hdr>About DocPort</h6><ul class=ftr-links-sub><li><a href=# rel=nofollow>Our Company</a></li><li><a href=# rel=nofollow>Careers</a></li><li><a href=# rel=nofollow>Affiliate Program</a></li><li><a href=# rel=nofollow><strong>Shop Our Catalog</strong></a></li><li><a href=# rel=nofollow>DocPort BLOG</a></li></ul></div><div class=footer-list-wrap><h6 class=ftr-hdr>My Account</h6><ul class=ftr-links-sub><art:content rule=!loggedin><li class=ftr-Login><span class="link login-trigger">Access My Account</span></li><li><span class=link>Track My Order</span></li></art:content><art:content rule=loggedin><li class=ftr-Login><span class="link ftr-access-my-account">Access My Account</span></li><li><span class=link>Track My Order</span></li></art:content></ul></div></div><div class=footer-email><h6 class=ftr-hdr>Sign up for exclusive offers and inspiration</h6><div id=ftr-email class=ftr-email-form><form id=ftrEmailForm method=post action=#><div class=error>Please enter a valid email address</div><input type=text name=email_address_ id=ftrEmailInput class=input placeholder="Enter email address"></form></div><div class=ftr-email-privacy-policy></div></div><div class=footer-social><h6 class=ftr-hdr>Follow Us</h6><ul><li><a href=# title=Facebook><img width=24 height=24 alt="Like us on Facebook" src=https://daptin.github.io/documentation/images/fb.png></a></li><li><a href=# title=Google+><img width=24 height=24 alt="Follow us on Google+" src=https://daptin.github.io/documentation/images/gplus.png></a></li><li><a href=# target=_blank><img width=24 height=24 alt="Follow us on Pinterest" src=https://daptin.github.io/documentation/images/pin-badge.png></a></li><li><a target=_blank href=#><img width=24 height=24 alt="Follow us on Instagram" src=https://daptin.github.io/documentation/images/instagram-badge.png></a></li><li><a href=# title=Twitter><img width=67 alt="Follow us on Twitter" src=https://daptin.github.io/documentation/images/twitter.png></a></li></ul></div><div class=footer-legal><p>&copy; Docport MIT Licence. | <a href=# rel=nofollow>Privacy Policy</a> | <a href=# rel=nofollow>Terms of Use</a> | <a href=# rel=nofollow>Terms of Sale</a></p><p>Docport is free Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p><p>Various aspects of this website are ...blablabla</p></div></div></div></footer></body></html>
