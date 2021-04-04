@@ -28,6 +28,9 @@ canonifyurls = true
 
 disableKinds = ["taxonomy", "taxonomyTerm", "category", "RSS"]
 
+[site]
+editURL = "https://github.com/daptin/documentation/tree/master/"
+
 [params]
 ordersectionsby = "weight" # ordersectionsby = "title"
 color_main = "#737373"
