@@ -1,4 +1,4 @@
-baseURL = "http://daptin.github.com/documentation"
+baseURL = "https://daptin.github.io/documentation/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
