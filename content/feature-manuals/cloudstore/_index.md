@@ -6,7 +6,14 @@ weight: 2
 
 # Cloud store
 
-Datin can work with the following storage services:
+
+Cloud store is an abstraction for storage API for various features of daptin like file column storage and site hosting.
+
+Most cloud storage require oauth connection and token to operate.
+
+You can create more stores by creating more rows in the cloud_store table, daptin will take care of syncing it.
+
+Daptin can work with the following storage providrs:
 
 - Amazon Drive  
 - Amazon S3  
@@ -44,5 +51,5 @@ Datin can work with the following storage services:
 
 If the service you want to integrate with requires authentication, create the following:
 
-- An [oauth connection](/extend/oauth_connection)
-- An [oauth token](/extend/oauth_token) generated from the above connection
+- An [oauth connection](/feature-manuals/extend/oauth_connection)
+- An [oauth token](/feature-manuals/extend/oauth_token) generated from the above connection

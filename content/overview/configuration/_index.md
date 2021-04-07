@@ -1,72 +1,70 @@
 ---
 description: ""
-title: Configuration
+title: _config table
 weight: 2
 ---
 
 
-# _config table
-
 Global configurations are stored in `_config`. `_config` table is not exposed as CRUD API like other tables.
 
-Only users who belong to administrators group cann reading/writing config entries from the config API.
+Only users who belong to administrators group can read/update config entries using the config API.
 
-Any change in _config requires a re-init of daptin for them to take effect.
+Any change in _config requires a re-sync (or restart) of daptin for them to take effect.
 
-## Hostname
+### Hostname
 
 Used for identification as IMAP/SMTP server Default value from os hostname
 
-## JWT secret
+### JWT secret
 
 Used for signing the jwt tokens issue at login
 
 Changing this would force all users logout
 
-## Encryption secret
+### Encryption secret
 
 Secret used to encrypt data for storing in encrypted columns
 
 Changing the secret would make the data stored in all encrypted column unrecoverable.
 
-## JWT token issuer
+### JWT token issuer
 
 The issuer name for JWT tokens
 
-## Language default
+### Language default
 
 The default language expected in the Accept-Language header. Different value in Accept-Language header in request will
 trigger a lookup in corresponding translations table if enabled.
 
-## Max connection limit
+### Max connection limit
 
 The limit for max connections from a single IP
 
-## Rate limit
+### Rate limit
 
 The limit for request rate limit per minute
 
-## Enable Graphql
+### Enable Graphql
 
 Graphql endpoint `/graphql` is disabled by default. Set to true to use graphql endpoint
 
-## Enable IMAP
+### Enable IMAP
 
 IMAP interface is disabled by default. Set to true to start listening to IMAP port
 
-## JWT token lifetime (hours)
+### JWT token lifetime (hours)
 
 Life time in hours of JWT tokens generated for login
 
-## TOTP secret
+### TOTP secret
 
 TOTP secret used for CSRF token generation and 2factor token generator
 
-## Enable FTP
+### Enable FTP
 
 FTP interface for sites is disabled by default (even if enabled per site). Set to true to start FTP services.
 
-# Default values
+## Default values
 
 | id |         name          | configtype | configstate | configenv |                value                 | valuetype | previousvalue |         created_at         | updated_at |
 |----|-----------------------|------------|-------------|-----------|--------------------------------------|-----------|---------------|----------------------------|------------|
@@ -84,14 +82,14 @@ FTP interface for sites is disabled by default (even if enabled per site). Set t
 | 14 | totp.secret           | backend    | enabled     | release   | 2DOEBQZYQBITVPTW                     |           |               | 2021-01-02 15:11:57.752502 |
 | 15 | ftp.enable            | backend    | enabled     | release   | false                                |           |               | 2021-01-02 15:11:57.999189 |
 
-### Get value _config table API
+## Get value _config table API
 
 ```bash
 curl \
 -H "Authorization: Bearer <ADMIN_TOKEN>" http://localhost:6336/_config/backend/<setting.name>
 ```
 
-### Set new value _config table API
+## Set new value _config table API
 
 ```bash
 curl \
